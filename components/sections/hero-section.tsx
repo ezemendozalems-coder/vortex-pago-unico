@@ -300,7 +300,7 @@ export function HeroSection() {
             className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start"
           >
             <Link
-              href="https://vortexcontrolphone.online/dashboard"
+              href="https://vortexcontrolphone.online/demo"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-violet inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full font-semibold text-sm sm:text-base"

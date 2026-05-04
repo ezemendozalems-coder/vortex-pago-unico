@@ -36,7 +36,7 @@ export function CtaSection() {
           Gestiona inventario, ventas, reparaciones y clientes en una sola plataforma.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
-          <Link href="https://vortexcontrolphone.online/dashboard" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+          <Link href="https://vortexcontrolphone.online/demo" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
             <div className="w-full sm:w-auto">
               <LiquidCtaButton>Probar demo</LiquidCtaButton>
             </div>

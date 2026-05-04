@@ -41,7 +41,7 @@ export function Navbar() {
             Login
           </Link>
           <Link
-            href="https://vortexcontrolphone.online/dashboard"
+            href="https://vortexcontrolphone.online/demo"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-violet ml-1 px-4 py-1.5 text-sm rounded-full font-medium"
@@ -82,7 +82,7 @@ export function Navbar() {
               Login
             </Link>
             <Link
-              href="https://vortexcontrolphone.online/dashboard"
+              href="https://vortexcontrolphone.online/demo"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}

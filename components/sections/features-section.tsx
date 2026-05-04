@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion"
 import { AnimatedBorderCard } from "@/components/ui/animated-border-card"
+import Link from "next/link"
+import { ArrowRight } from "lucide-react"
 
 export function FeaturesSection() {
   return (
@@ -50,8 +52,8 @@ export function FeaturesSection() {
                   dangerouslySetInnerHTML={{
                     __html: `
                       <iframe
-                        id="panda-b3350e06-399b-4b35-ad8c-3440c3c19b22"
-                        src="https://player-vz-8861c0e6-4f7.tv.pandavideo.com/embed/?v=b3350e06-399b-4b35-ad8c-3440c3c19b22"
+                        id="panda-a9506aba-4f1a-444d-bed8-04d98096e9b2"
+                        src="https://player-vz-9d63c2fb-f2f.tv.pandavideo.com/embed/?v=a9506aba-4f1a-444d-bed8-04d98096e9b2"
                         style="border:none;width:100%;height:100%;"
                         allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture"
                         allowfullscreen="true"
@@ -66,7 +68,7 @@ export function FeaturesSection() {
                         }
                         window.pandascripttag = window.pandascripttag || [];
                         window.pandascripttag.push(function (){
-                          const panda_id_player = 'panda-b3350e06-399b-4b35-ad8c-3440c3c19b22';
+                          const panda_id_player = 'panda-a9506aba-4f1a-444d-bed8-04d98096e9b2';
                           const p=new PandaPlayer(panda_id_player,{
                             onReady(){p.pipScrollFollow({panda_id_player});}
                           });
@@ -78,6 +80,25 @@ export function FeaturesSection() {
               </div>
             </div>
           </AnimatedBorderCard>
+        </motion.div>
+
+        {/* Demo Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mt-12 flex justify-center"
+        >
+          <Link
+            href="https://vortexcontrolphone.online/demo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-violet inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-base sm:text-lg shadow-[0_0_20px_rgba(124,58,237,0.3)] hover:shadow-[0_0_30px_rgba(124,58,237,0.5)] transition-all duration-300 group"
+          >
+            <span>Probar demo</span>
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+          </Link>
         </motion.div>
 
       </div>
