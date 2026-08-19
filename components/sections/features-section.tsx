@@ -52,28 +52,13 @@ export function FeaturesSection() {
                   dangerouslySetInnerHTML={{
                     __html: `
                       <iframe
-                        id="panda-a9506aba-4f1a-444d-bed8-04d98096e9b2"
-                        src="https://player-vz-9d63c2fb-f2f.tv.pandavideo.com/embed/?v=a9506aba-4f1a-444d-bed8-04d98096e9b2"
+                        src="https://www.youtube-nocookie.com/embed/RbLDUOr7m3Q"
+                        title="Video demostrativo de Vortex"
                         style="border:none;width:100%;height:100%;"
-                        allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture"
+                        allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;web-share"
                         allowfullscreen="true"
-                        fetchpriority="high"
+                        loading="lazy"
                       ></iframe>
-                      <script>
-                        if(!document.querySelector('script[src="https://player.pandavideo.com.br/api.v2.js"]')){
-                          let s=document.createElement('script');
-                          s.src='https://player.pandavideo.com.br/api.v2.js';
-                          s.async=true;
-                          document.head.appendChild(s);
-                        }
-                        window.pandascripttag = window.pandascripttag || [];
-                        window.pandascripttag.push(function (){
-                          const panda_id_player = 'panda-a9506aba-4f1a-444d-bed8-04d98096e9b2';
-                          const p=new PandaPlayer(panda_id_player,{
-                            onReady(){p.pipScrollFollow({panda_id_player});}
-                          });
-                        });
-                      </script>
                     `,
                   }}
                 />

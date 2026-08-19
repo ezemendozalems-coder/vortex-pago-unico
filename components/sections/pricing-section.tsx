@@ -19,11 +19,15 @@ function useCountdown(target: Date) {
       seconds: Math.floor((diff % 60000) / 1000),
     }
   }
-  const [time, setTime] = useState(calc)
+  // Start from a deterministic value so the server and client render the same HTML.
+  // The real countdown is calculated only after hydration in the effect below.
+  const [time, setTime] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
+
   useEffect(() => {
+    setTime(calc())
     const id = setInterval(() => setTime(calc()), 1000)
     return () => clearInterval(id)
-  }, [])
+  }, [target])
   return time
 }
 
