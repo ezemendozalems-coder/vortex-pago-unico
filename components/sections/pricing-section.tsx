@@ -6,8 +6,8 @@ import Link from "next/link"
 import { AnimatedBorderCard } from "@/components/ui/animated-border-card"
 import { useEffect, useState } from "react"
 
-// Deadline: 41 days from March 20, 2026 = April 30, 2026 23:59:59 UTC-3
-const DEADLINE = new Date("2026-04-30T23:59:59-03:00")
+// La oferta finaliza el 19 de septiembre de 2026 a las 23:59:59 UTC-3
+const DEADLINE = new Date("2026-09-19T23:59:59-03:00")
 
 function useCountdown(target: Date) {
   const calc = () => {
